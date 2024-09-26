@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Andy's Consultorio</title>
+        <link rel="stylesheet" href="Css/style.css">
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+        <script src="Js/script.js" defer></script>
+
+        
+    </head>
+    <body>
+        <div class="container">
+        <h1> Bienvenido al Consultorio de Andrea</h1>
+            <form action="userCreate.php" id="appointment" method="post">
+                <label for="name"> Nombre: </label>
+                <input type="text" id="name" name="nombre" required>
+
+                <label for="lastNa"> Apellido: </label>
+                <input type="text" id="lastNa" name="lastNa">
+
+                <label for="email"> email: </label>
+                <input type="email"  id="email" name="email" >                 
+
+               <label for="phone"> Número de Celular: </label>
+               <input type="text"  id="phone" name="phone" > 
+
+                <label for="date"> Fecha: </label>
+                <input type="date" id="date" name="date">
+
+                <label for="time"> hora:</label>
+                <input type="time" id="time" name="time">
+
+                <label  for="comment"> Comentarios </label>
+                <textarea class="comment" name="comment" id="comments"></textarea> 
+                <button type="submit"> Agendar Cita </button>                  
+                
+            </form>
+
+            <div  id="confirmationMessage"></div>
+
+            <div>
+                
+                <footer>derechos reservados &#169; </footer>
+                
+            </div>
+
+        </div>      
+</body>
+</html>

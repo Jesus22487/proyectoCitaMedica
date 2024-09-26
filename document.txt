@@ -1,0 +1,16 @@
+VALIDACION DE email
+
+
+  1-  Expresión Regular (emailPattern): La expresión regular ^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$ se utiliza para definir el formato aceptable de una dirección de correo electrónico.
+  2-  ^[a-zA-Z0-9._%+-]+: Comienza con uno o más caracteres que pueden ser letras, números, puntos, guiones bajos, signos de porcentaje, signos de más, o guiones.
+  3- @: Debe haber un símbolo @ después del nombre del correo.
+  4- [a-zA-Z0-9.-]+: Después del @, debe haber una secuencia de letras, números, puntos, o guiones.
+  5- \.[a-zA-Z]{2,}$: El dominio debe terminar con un punto seguido por al menos dos letras (como .com, .es, .net, etc.).
+  6- Validación (if (!emailPattern.test(email))): Se verifica si el correo electrónico ingresado coincide con el patrón definido. Si no coincide, se muestra un mensaje de error.
+
+
+  VALIDACION CEL
+
+ 1-  Expresión Regular (phonePattern): La expresión ^\d{10}$ se usa para asegurar que el número de teléfono contenga exactamente 10 dígitos.
+ 2- /^\d{10}$: La ^ indica el comienzo de la cadena, \d{10} asegura que haya exactamente 10 dígitos, y $ indica el final de la cadena.
+ 3- Validación (if (!phonePattern.test(phone))): Verifica si el número de teléfono ingresado tiene exactamente 10 dígitos. Si no es así, muestra un mensaje de error.
