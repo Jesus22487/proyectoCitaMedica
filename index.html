@@ -15,6 +15,7 @@
     <body>
         <div class="container">
         <h1> Bienvenido al Consultorio de Andrea</h1>
+
             <form action="userCreate.php" id="appointment" method="post">
                 <label for="name"> Nombre: </label>
                 <input type="text" id="name" name="nombre" required>
@@ -33,6 +34,14 @@
 
                 <label for="time"> hora:</label>
                 <input type="time" id="time" name="time">
+
+                <select name="sucursal" id="sucursal">
+                    <option value="">Sucursal</option>
+                    <option value="Fuertes de loreto">Fuertes de loreto</option>    
+                    <option value="Tlaxcalancingo">Tlaxcalancingo</option>
+                    <option value="Cholula">Cholula</option>                    
+                </select>
+              
 
                 <label  for="comment"> Comentarios </label>
                 <textarea class="comment" name="comment" id="comments"></textarea> 

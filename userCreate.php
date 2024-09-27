@@ -1,6 +1,7 @@
 <?php
 
     require 'db.php';
+    
 
         /*El parametro debe ser igual al name que usamos en html */ 
         /* Obtenemos las variables del formulario */
@@ -11,6 +12,7 @@
         $hora = $_POST ['time'];
         $fecha = $_POST ['date'];
         $comentarios = $_POST ['comment'];
+        
 
         /* creamos la instruccion para insertar registro en bd */
         $sql = "INSERT INTO citas (nombre, apellido, email, telefono, hora, fecha, comentarios)
